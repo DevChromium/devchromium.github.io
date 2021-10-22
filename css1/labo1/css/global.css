@@ -19,7 +19,7 @@ body {
     padding-inline: 25px;
     border-radius: 10px;
     margin-bottom: 15px;
-    border-left: 10px solid darkgray;
+    border-left: 10px solid deepskyblue;
 }
 
 .opdracht_container > .vraag {
@@ -36,9 +36,10 @@ code {
     background: #EFEFEF;
     color: gray;
     padding: 2px;
-    border-radius: 15%;
+    border-radius: 5px;
     margin-inline: 3px;
     padding-inline: 5px;
+    font-family: monospace;
 }
 
 .h1{

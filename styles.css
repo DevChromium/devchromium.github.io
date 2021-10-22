@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +10,44 @@ body {
     
 }
 
+.hero {
+    background: linear-gradient(deepskyblue, cornflowerblue);
+    height: 55vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 5%;
+    margin-bottom: 50px;
+}
+
 .container {
-    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5%;
+}
+
+.inline-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .list {
-    list-style: none;
+    margin-inline: 1%;
 }
 .list > li > a {
+    color: black;
     text-decoration: none;
 }
 .list > li > a:hover {
-    color: deeppink;
+    color: deepskyblue;
 }
 
 #opdrachten_html,
