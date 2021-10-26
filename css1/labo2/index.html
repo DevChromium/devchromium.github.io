@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Labo 2</title>
+    <link rel="stylesheet" href="css/global.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section id="opdracht1" style="margin-bottom: 30px;">
+            <h1 style="margin-bottom: 5px;">Opdracht 1</h1>
+            <p style="margin-bottom: 20px;">Herschrijf de volgende CSS code</p>
+            <div style="margin-bottom: 10px;">
+                <em>Opgave HTML</em>
+                <pre class="prettyprint">
+                        <code class="language-html">
+                            &lt;ul&gt;
+                                &lt;li&gt; class="menuitem"&gt;&lt;a href="..."&gt;products&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; class="menuitem"&gt;&lt;a href="..."&gt;distributors&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt; class="menuitem"&gt;&lt;a href="..."&gt;contact&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        </code>
+                </pre>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <em>Opgave CSS</em>
+                <pre class="prettyprint">
+                    <code class="lang-css">
+                        .menuitem {
+                            display:inline-block;
+                            width:150px;
+                        }
+
+                        .menuitem > a {
+                            color:red;
+                        }
+                    </code>
+                </pre>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <em>Antwoord CSS</em>
+                <pre class="prettyprint">
+                    <code class="lang-css">
+                        .menu {
+                            display:inline-block;
+                            width:150px;
+                        }
+
+                        .menu > li {
+                            color:red;
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 30px;
+    background: lightgray;
+    height: 100vh;
+}
+
+section {
+    border-radius: 10px;
+    border-left: deepskyblue solid 10px;
+    background: white;
+    padding: 15px;
+}
+
+
