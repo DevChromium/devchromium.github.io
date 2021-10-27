@@ -1,0 +1,33 @@
+code {
+    background: #EFEFEF;
+    color: gray;
+    padding: 2px;
+    border-radius: 5px;
+    margin-inline: 3px;
+    padding-inline: 5px;
+    font-family: monospace;
+}
+
+a.link {
+    text-decoration: none;
+}
+
+a.link:link {
+    background-image: url('../img/link-solid.svg');
+    background-size: 10px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+}
+
+a.link:hover {
+    color: deepskyblue;
+}
+
+.checklist {
+    list-style-image: url("../img/square-regular.svg");
+}
+
+.checked {
+    list-style-image: url("../img/check-square-regular.svg");
+}

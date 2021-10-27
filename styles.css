@@ -7,11 +7,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #F3F4F6;
     
 }
 
 .hero {
-    background: linear-gradient(deepskyblue, cornflowerblue);
+    background: linear-gradient(315deg, cornflowerblue, deepskyblue);
     height: 55vh;
     color: white;
     display: flex;

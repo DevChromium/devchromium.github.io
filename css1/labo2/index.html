@@ -3,63 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Labo 2</title>
-    <link rel="stylesheet" href="css/global.css">
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="css/labo2.css">
+    <link rel="stylesheet" href="../css/globals.css">
+    <!-- Syntax highlighting-->
+    <link rel="stylesheet" href="css/enlighterjs.atomic.min.css">
+
 </head>
 <body>
     <main class="container">
-        <section id="opdracht1" style="margin-bottom: 30px;">
-            <h1 style="margin-bottom: 5px;">Opdracht 1</h1>
-            <p style="margin-bottom: 20px;">Herschrijf de volgende CSS code</p>
-            <div style="margin-bottom: 10px;">
-                <em>Opgave HTML</em>
-                <pre class="prettyprint">
-                        <code class="language-html">
-                            &lt;ul&gt;
-                                &lt;li&gt; class="menuitem"&gt;&lt;a href="..."&gt;products&lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt; class="menuitem"&gt;&lt;a href="..."&gt;distributors&lt;/a&gt;&lt;/li&gt;
-                                &lt;li&gt; class="menuitem"&gt;&lt;a href="..."&gt;contact&lt;/a&gt;&lt;/li&gt;
-                            &lt;/ul&gt;
-                        </code>
+        <section id="opdracht1" class="opdracht_container">
+            <div class="opdracht_content">
+                <h1 class="vraag">Opdracht 1</h1>
+                <p style="margin-bottom: 20px;">Herschrijf de volgende CSS code</p>
+                <small><em>Opgave:</em></small>
+                <pre data-enlighter-language="css">
+.menuitem {
+   display:inline-block;
+   width:150px;
+}
+.menuitem > a {
+   color:red;
+}
                 </pre>
-            </div>
+                <small><em>Antwoord:</em></small>
+                <pre data-enlighter-language="css">
+ul {
+  display:inline-block;
+  width:150px;
+}
 
-            <div style="margin-bottom: 10px;">
-                <em>Opgave CSS</em>
-                <pre class="prettyprint">
-                    <code class="lang-css">
-                        .menuitem {
-                            display:inline-block;
-                            width:150px;
-                        }
-
-                        .menuitem > a {
-                            color:red;
-                        }
-                    </code>
-                </pre>
-            </div>
-
-            <div style="margin-bottom: 10px;">
-                <em>Antwoord CSS</em>
-                <pre class="prettyprint">
-                    <code class="lang-css">
-                        .menu {
-                            display:inline-block;
-                            width:150px;
-                        }
-
-                        .menu > li {
-                            color:red;
-                        }
-                    </code>
-                </pre>
+ul > li {
+  color:red;
+}               </pre>
             </div>
         </section>
 
-        <section>
-
+        <section id="opdracht2" class="opdracht_container">
+            <div class="opdracht_content">
+                <h1 class="vraag">Opdracht 2</h1>
+                <p style="margin-bottom: 20px;">Dit stukje code maakt gebruik van negatieve margins om de groep tekst te verschuiven naar boven om minder dead-space te gebruiken. Wanneer je de negatieve margins verandert naar een positieve variant zal er veel meer dead-space zichtbaar zijn op de pagina.</p>
+                <img src="img/zengarden.png" alt="Zen Garden" class="opdracht_image"><br>
+                <small><em>Voorbeeld zonder de negatieve margin-top</em></small>
+            </div>
         </section>
+
+        <section id="opdracht3" class="opdracht_container">
+            <div class="opdracht_content">
+                <h1 class="vraag">Opdracht 3</h1>
+                <a class="link" href="resume.html">Ga naar de resume opdracht</a>
+            </div>
+        </section>
+        <section id="opdracht4" class="opdracht_container">
+            <div class="opdracht_content">
+                <h1 class="vraag">Opdracht 4</h1>
+                <a href="opdracht4.html" class="link">Ga naar de opdracht</a>
+            </div>
+        </section>
+        <section id="opdracht5" class="opdracht_container">
+            <div class="opdracht_content">
+                <h1 class="vraag">Opdracht 5</h1>
+                <a href="https://youtu.be/dQw4w9WgXcQ" class="link">Hyperlink</a>
+            </div>
+        </section>
+        <section id="opdracht6" class="opdracht_container">
+            <div class="opdracht_content">
+                <h1 class="vraag">Opdracht 6</h1>
+                <p>Schrijf een HTML pagina met bijbehorend CSS bestand om dit te realiseren d.m.v. een icoontje</p>
+                <ul class="checklist">
+                    <li class="checked">boter</li>
+                    <li>kaas</li>
+                    <li class="checked">eieren</li>
+                </ul>
+            </div>
+        </section>
+
     </main>
+
+    <script src="js/enlighterjs.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        EnlighterJS.init('pre', 'code', {
+            language : 'css',
+            theme: 'atomic',
+            indent: 2
+        });
+    </script>
 </body>
 </html>
