@@ -12,7 +12,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(315deg, cornflowerblue, deepskyblue);
+    background: linear-gradient(315deg, #883ab4, #fd1d1d 50%, #fcb045);
     height: 55vh;
     color: white;
     display: flex;
@@ -48,10 +48,14 @@ body {
     text-decoration: none;
 }
 .list > li > a:hover {
-    color: deepskyblue;
+    color: #fcb045;
 }
 
 #opdrachten_html,
 #opdrachten_css {
     margin-bottom: 15px;
+}
+
+.fab {
+    color: #fcb045;
 }
