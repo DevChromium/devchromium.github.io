@@ -1,0 +1,25 @@
+table {
+    border: 2px solid black;
+}
+
+.header {
+    background-color: rgb(170,170,200);
+}
+
+.dagen {
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+.nietDezeMaand {
+    background-color: lightgray !important;
+    color: darkgray;
+}
+
+tbody > tr > td:first-child,
+tbody > tr > td:last-child {
+    background-color: rgb(255, 220, 220);
+}
+
+.vrijeDag {
+    background-color: rgb(250,120,120);
+}
