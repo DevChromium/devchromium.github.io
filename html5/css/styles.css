@@ -1,69 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+:root {
+    --dark-gray: #1a1a1a;
+    --electric-blue: #90F1EF;
+    --mini-pink: #FFD6E0;
+    --yellow-crayola: #FFEF9F;
+    --mint-green: #C1FBA4;
+    --light-green: #7BF1A8;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: var(--dark-gray);
+    color: white;
+}
+
 .nav_brand {
     padding-left: 50px;
-    color: white;
+    color: var(--electric-blue);
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .nav_brand:hover {
-    color: deepskyblue;
+    color: var(--mini-pink);
 }
 
-#navigatie{
+#navigation {
     display: flex;
     align-items: center;
     color: white;
-    background-color: black;
+    background-color: #121212;
     margin-bottom: 25px;
-    height: 50px;
+    height: 75px;
+    border-bottom: 2px solid var(--electric-blue);
 }
 
-#navigatie > ul {
+#navigation > ul {
     margin-left: 25px;
     display: inline-flex;
     list-style: none;
     column-gap: 30px;
 }
 
-#navigatie > ul > li > a {
-    color: white;
+.navLink {
+    color: var(--electric-blue);
     text-decoration: none;
+    transition: 0.3s;
 }
 
-#navigatie > ul > li > a:hover {
-    color: deepskyblue;
+.navLink:hover {
+    color: var(--mini-pink);
 }
 
-section {
-    padding-inline: 50px;
+.navLink:hover:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--mini-pink);
+}
+
+.active {
+    color: var(--mini-pink) !important;
+}
+
+.active:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--mini-pink);
+}
+
+
+section.container {
+    padding: 20px 50px;
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #121212;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    column-gap: 15px;
+}
+
+.button {
+    background-color: var(--electric-blue);
+    border: none;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: var(--mini-pink);
 }
 
 .title {
     font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--electric-blue);
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: larger;
     margin-bottom: 10px;
+    color: var(--yellow-crayola);
 }
 
-.wynntilsIcon {
-    width: 15px;
-    height: auto;
-    padding-inline: 5px;
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 15px;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-right: 20px;
+    filter: grayscale(100%);
 }
 
-.generic_link {
+.card {
+    background-color: #09090959;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: #1a1a1a solid 1px;
+}
+
+.card > ol {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.artist {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.genericLink {
     text-decoration: none;
-    color: deepskyblue;
+    color: var(--light-green);
+    transition: 0.3s;
 }
 
-.generic_link:hover {
-    color: dodgerblue;
+.genericLink:hover {
+    color: var(--mint-green);
+}
+
+#projects {
+    margin-inline: 20px;
+}
+
+.projectImage {
+    width: 500px;
+    height: 280px;
+    border-radius: 20px;
+    margin-bottom: 5px;
 }

@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Lucas</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<nav id="navigatie">
-    <a href="index.html" class="nav_brand">Lucas</a>
-    <ul>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav id="navigation">
+      <a href="index.html" class="nav_brand">Lucas</a>
+      <ul>
         <li>
-            <a href="index.html">Homepage</a>
+          <a href="index.html" class="navLink active">Homepage</a>
         </li>
         <li>
-            <a href="hobbys.html">Hobby's</a>
+          <a href="hobbys.html" class="navLink">Hobbies</a>
         </li>
         <li>
-            <a href="likes.html">Likes</a>
+          <a href="likes.html" class="navLink">Likes</a>
         </li>
-    </ul>
-</nav>
-<section id="overMij">
-    <h1 class="title">Hoi!</h1>
-    <p>Ik ben Lucas, ook wel bekend als mijn online pseudoniem "Chromium". Dit jaar (2021) ben ik gestart aan mijn
-        bacheloropleiding Toegepaste Informatie. Hiernaast ben ik ook een freelance developer voor het project
-        <a href="https://wynntils.com" target="_blank" class="generic_link">
-            <img src="img/wynntilsIcon.svg" class="wynntilsIcon" />
-            Wynntils
-        </a>
-        en heb ik een grote passie voor het designen van mooie websites.
-    </p>
-</section>
-</body>
+      </ul>
+    </nav>
+    <section class="container" id="overMij">
+      <div class="flexContainer">
+        <img src="img/foto.jpeg" alt="myPhoto" title="Lucas" class="avatar" />
+        <div>
+          <h1 class="title">Hello, world!</h1>
+          <p>
+            Ik ben Lucas, ook wel bekend als mijn online pseudoniem "Chromium". Momenteel ben ik 19 jaar en word 20 binnen een aantal maanden.
+            Dit jaar (2021) ben ik gestart aan mijn bacheloropleiding Toegepaste
+            Informatie. Hiernaast ben ik ook een freelance developer voor het
+            project
+            <a href="https://wynntils.com" target="_blank" class="genericLink">
+              Wynntils
+            </a>
+            en heb ik een grote passie voor het designen van mooie websites.
+          </p>
+          <div class="button-group">
+            <a class="button" href="https://github.com/DevChromium" target="_blank">
+              <img
+                src="img/github-brands.svg"
+                alt="Github logo"
+                class="brandIcon"
+              />
+            </a>
+            <a class="button" href="https://twitter.com/chromium__" target="_blank">
+              <img
+                src="img/twitter-brands.svg"
+                alt="Twitter logo"
+                class="brandIcon"
+              />
+            </a>
+            <a class="button" href="https://wynntils.com" target="_blank">
+                <img
+                  src="img/wynntilsIcon.svg"
+                  alt="Wynntils logo"
+                  class="brandIcon"
+                />
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="projects">
+      <h1 class="title">Some of my projects</h1>
+      <div class="flexContainer">
+        <div>
+          <img src="img/wynntils.png" alt="Wynntils redesign" title="Wynntils redesign" class="projectImage">
+          <p><i>Wynntils redesign</i></p>
+        </div>
+        <div>
+          <img src="img/draftless.png" alt="draftless" title="Draftless company" class="projectImage">
+          <p><i>Draftless (Proof of concept)</i></p>
+        </div>
+      </div>
+    </article>
+  </body>
 </html>
