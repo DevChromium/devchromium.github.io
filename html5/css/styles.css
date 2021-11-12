@@ -1,22 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.nav_brand {
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav_brand:hover {
+    color: deepskyblue;
+}
+
 #navigatie{
+    display: flex;
+    align-items: center;
     color: white;
     background-color: black;
-    padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    height: 50px;
 }
 
 #navigatie > ul {
-    display: flex;
+    margin-left: 25px;
+    display: inline-flex;
     list-style: none;
-    column-gap: 10px;
+    column-gap: 30px;
 }
 
 #navigatie > ul > li > a {
@@ -30,4 +46,24 @@
 
 section {
     padding-inline: 50px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wynntilsIcon {
+    width: 15px;
+    height: auto;
+    padding-inline: 5px;
+}
+
+.generic_link {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+.generic_link:hover {
+    color: dodgerblue;
 }
