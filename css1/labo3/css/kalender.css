@@ -10,16 +10,30 @@ table {
     background-color: rgb(35,37,70);
     color: rgb(200,190,240);
 }
-.nietDezeMaand {
+/* 
+* Classes voor de dagen die niet in de maand zijn
+*/
+tbody > tr:nth-child(1) > td:nth-child(1),
+tbody > tr:nth-child(5) > td:nth-child(5),
+tbody > tr:nth-child(5) > td:nth-child(6),
+tbody > tr:nth-child(5) > td:nth-child(7) {
     background-color: lightgray !important;
     color: darkgray;
 }
 
+
+/* 
+* Classes voor de dagen die in het weekend vallen
+*/
 tbody > tr > td:first-child,
 tbody > tr > td:last-child {
     background-color: rgb(255, 220, 220);
 }
 
-.vrijeDag {
+
+/* 
+* Vrije dag class
+*/
+tbody > tr:nth-child(3) > td:nth-child(3) {
     background-color: rgb(250,120,120);
 }
