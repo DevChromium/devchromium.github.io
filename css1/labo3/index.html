@@ -1,134 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>CSS Labo 3</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
     <!-- Syntax highlighting-->
-    <link rel="stylesheet" href="css/enlighterjs.atomic.min.css">
+    <link rel="stylesheet" href="css/enlighterjs.atomic.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="intro_hero">
+          <h1 class="title">Week 7</h1>
+          <h2 class="subtitle">Labo 3</h2>
+      </section>
 
-</head>
-<body>
-<main class="container">
-    <section id="opdracht1" class="opdracht_container">
-        <div class="opdracht_content">
-            <h1 class="vraag">Opdracht 1</h1>
-            <p style="margin-bottom: 20px;">
-                Dit is de broncode van de website <a href="https://wynntils.com/">Wynntils</a> (Freelance web-developer
-                bij het team). Je kan duidelijk zien dat er een CSS-regel doorstreept is, dit wilt betekenen dat ergens
-                anders in de CSS deze regel overridden wordt met iets anders.
+      <div class="container">
+        <section id="opdracht1" class="opdracht_container">
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 1</h1>
+            <p style="margin-bottom: 20px">
+              Dit is de broncode van de website
+              <a href="https://wynntils.com/" class="lab_link">Wynntils</a> (Freelance
+              web-developer bij het team). Je kan duidelijk zien dat er een
+              CSS-regel doorstreept is, dit wilt betekenen dat ergens anders in
+              de CSS deze regel overridden wordt met iets anders.
             </p>
-            <img src="img/opdr1.png" alt="Opdracht 1" title="Opdracht 1 Dev tools" class="opdracht_image">
-        </div>
-    </section>
+            <img
+              src="img/opdr1.png"
+              alt="Opdracht 1"
+              title="Opdracht 1 Dev tools"
+              class="opdracht_image"
+            />
+          </div>
+        </section>
 
-    <section id="opdracht2" class="opdracht_container">
-        <div class="opdracht_content">
-            <h1 class="vraag">Opdracht Natureblog</h1>
-            <p style="margin-bottom: 20px;"><a href="natureblog/index.html">Klik hier om naar de natureblog te gaan</a>
-            </p>
-        </div>
-    </section>
+        <section id="opdracht2" class="opdracht_container">
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht Natureblog</h1>
+            <a href="natureblog/index.html" class="lab_link"
+              >Klik hier om naar de natureblog te gaan</a
+            >
+          </div>
+        </section>
 
-    <section id="opdracht3" class="opdracht_container">
-        <div class="opdracht_content">
-            <h1 class="vraag">Opdracht Personele homepage</h1>
-            <p style="margin-bottom: 20px"><a href="../../html5/index.html">Klik hier om naar de personele homepage te
-                gaan</a></p>
-        </div>
-    </section>
-    <section id="opdracht4" class="opdracht_container">
-        <div class="opdracht_content">
-            <h1 class="vraag">Opdracht CSS Tabellenopmaak</h1>
+        <section id="opdracht3" class="opdracht_container">
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht Personele homepage</h1>
+            <a href="../../html5/index.html" class="lab_link"
+              >Klik hier om naar de personele homepage te gaan</a
+            >
+          </div>
+        </section>
+        <section id="opdracht4" class="opdracht_container">
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht CSS Tabellenopmaak</h1>
             <div class="datagrid">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Naam</th>
-                        <th>Voornaam</th>
-                        <th>Leeftijd</th>
-                        <th>Geslacht</th>
-                        <th>Land</th>
-                        <th>Telefoonnummer</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Rick</td>
-                        <td>Asltey</td>
-                        <td>55</td>
-                        <td>Never gonna give</td>
-                        <td>You up.</td>
-                        <td>0000024023</td>
-                    </tr>
-                    <tr class="alt">
-                        <td>Mia</td>
-                        <td>Khalifa</td>
-                        <td>32</td>
-                        <td>Vrouw</td>
-                        <td>USA</td>
-                        <td>03432490</td>
-                    </tr>
-                    <tr>
-                        <td>Jennifer</td>
-                        <td>Mestdagh</td>
-                        <td>21</td>
-                        <td>Vrouw</td>
-                        <td>België</td>
-                        <td>029302393498234</td>
-                    </tr>
-                    <tr class="alt">
-                        <td>Angel</td>
-                        <td>Merlier</td>
-                        <td>21</td>
-                        <td>Vrouw</td>
-                        <td>België</td>
-                        <td>901234809134</td>
-                    </tr>
-                    <tr>
-                        <td>Barack</td>
-                        <td>Obama</td>
-                        <td>44</td>
-                        <td>Man</td>
-                        <td>USA</td>
-                        <td class="onbekend">Onbekend telefoonnummer</td>
-                    </tr>
-                    <tr class="alt">
-                        <td>Joe</td>
-                        <td>Biden</td>
-                        <td>77</td>
-                        <td>Man</td>
-                        <td>USA</td>
-                        <td class="onbekend">Onbekend telefoonnummer</td>
-                    </tr>
-                    </tbody>
-                </table>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Naam</th>
+                    <th>Voornaam</th>
+                    <th>Leeftijd</th>
+                    <th>Geslacht</th>
+                    <th>Land</th>
+                    <th>Telefoonnummer</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Rick</td>
+                    <td>Asltey</td>
+                    <td>55</td>
+                    <td>Never gonna give</td>
+                    <td>You up.</td>
+                    <td>0000024023</td>
+                  </tr>
+                  <tr class="alt">
+                    <td>Mia</td>
+                    <td>Khalifa</td>
+                    <td>32</td>
+                    <td>Vrouw</td>
+                    <td>USA</td>
+                    <td>03432490</td>
+                  </tr>
+                  <tr>
+                    <td>Jennifer</td>
+                    <td>Mestdagh</td>
+                    <td>21</td>
+                    <td>Vrouw</td>
+                    <td>België</td>
+                    <td>029302393498234</td>
+                  </tr>
+                  <tr class="alt">
+                    <td>Angel</td>
+                    <td>Merlier</td>
+                    <td>21</td>
+                    <td>Vrouw</td>
+                    <td>België</td>
+                    <td>901234809134</td>
+                  </tr>
+                  <tr>
+                    <td>Barack</td>
+                    <td>Obama</td>
+                    <td>44</td>
+                    <td>Man</td>
+                    <td>USA</td>
+                    <td class="onbekend">Onbekend telefoonnummer</td>
+                  </tr>
+                  <tr class="alt">
+                    <td>Joe</td>
+                    <td>Biden</td>
+                    <td>77</td>
+                    <td>Man</td>
+                    <td>USA</td>
+                    <td class="onbekend">Onbekend telefoonnummer</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-        </div>
-    </section>
-    <section id="opdracht5" class="opdracht_container">
-        <div class="opdracht_content">
-            <h1 class="vraag">Opdracht 3 CSS</h1>
-            <p>Dit komt omdat de <code>alt</code> class voorrang heeft op de class <code>onbekend</code>. De voorrang wordt gegeven omdat deze class hoger staat in de CSS</p>
-        </div>
-    </section>
-    <section id="opdracht6" class="opdracht_container">
-        <div class="opdracht_content">
-            <h1 class="vraag">Kalender</h1>
-            <a href="kalender.html">Klik hier om naar de kalender te gaan</a>
-        </div>
-    </section>
+          </div>
+        </section>
+        <section id="opdracht5" class="opdracht_container">
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 3 CSS</h1>
+            <p>
+              Dit komt omdat de <code>alt</code> class voorrang heeft op de
+              class <code>onbekend</code>. De voorrang wordt gegeven omdat deze
+              class hoger staat in de CSS
+            </p>
+          </div>
+        </section>
+        <section id="opdracht6" class="opdracht_container">
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Kalender</h1>
+            <a href="kalender.html" class="lab_link"
+              >Klik hier om naar de kalender te gaan</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
 
-</main>
-
-<script src="js/enlighterjs.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    EnlighterJS.init('pre', 'code', {
-        language: 'css',
-        theme: 'atomic',
-        indent: 1
-    });
-</script>
-</body>
+    <script src="js/enlighterjs.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      EnlighterJS.init("pre", "code", {
+        language: "css",
+        theme: "atomic",
+        indent: 1,
+      });
+    </script>
+  </body>
 </html>

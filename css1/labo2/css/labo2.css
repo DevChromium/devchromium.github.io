@@ -10,6 +10,7 @@ code {
 
 a.link {
     text-decoration: none;
+    color: #FFD6E0;
 }
 
 a.link:link {
@@ -21,7 +22,7 @@ a.link:link {
 }
 
 a.link:hover {
-    color: deepskyblue;
+    color: #d19ca9;
 }
 
 .checklist {

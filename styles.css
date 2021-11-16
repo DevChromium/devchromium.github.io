@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+:root {
+    --dark-gray: #272b33;
+    --electric-blue: #90F1EF;
+    --mini-pink: #FFD6E0;
+    --yellow-crayola: #FFEF9F;
+    --mint-green: #C1FBA4;
+    --light-green: #7BF1A8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +16,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: #F3F4F6;
+    background-color: var(--dark-gray);
+    color: white;
     
 }
 
 .hero {
-    background: linear-gradient(315deg, #883ab4, #fd1d1d 50%, #fcb045);
+    background: linear-gradient(315deg, var(--electric-blue), var(--light-green) 50%, var(--yellow-crayola));
     height: 55vh;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,11 +54,11 @@ body {
     margin-inline: 1%;
 }
 .list > li > a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .list > li > a:hover {
-    color: #fcb045;
+    color: var(--electric-blue);
 }
 
 #opdrachten_html,
@@ -57,5 +67,5 @@ body {
 }
 
 .fab {
-    color: #fcb045;
+    color: var(--electric-blue);
 }

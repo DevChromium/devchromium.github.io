@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>CSS Labo 2</title>
-    <link rel="stylesheet" href="css/labo2.css">
-    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="css/labo2.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
     <!-- Syntax highlighting-->
-    <link rel="stylesheet" href="css/enlighterjs.atomic.min.css">
-
-</head>
-<body>
-    <main class="container">
+    <link rel="stylesheet" href="css/enlighterjs.atomic.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="intro_hero">
+        <h1 class="title">Week 6</h1>
+        <h2 class="subtitle">Labo 2</h2>
+      </section>
+      <div class="container">
         <section id="opdracht1" class="opdracht_container">
-            <div class="opdracht_content">
-                <h1 class="vraag">Opdracht 1</h1>
-                <p style="margin-bottom: 20px;">Herschrijf de volgende CSS code</p>
-                <small><em>Opgave:</em></small>
-                <pre data-enlighter-language="css">
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 1</h1>
+            <p style="margin-bottom: 20px">Herschrijf de volgende CSS code</p>
+            <small><em>Opgave:</em></small>
+            <pre data-enlighter-language="css">
 .menuitem {
    display:inline-block;
    width:150px;
@@ -24,9 +28,10 @@
 .menuitem > a {
    color:red;
 }
-                </pre>
-                <small><em>Antwoord:</em></small>
-                <pre data-enlighter-language="css">
+                </pre
+            >
+            <small><em>Antwoord:</em></small>
+            <pre data-enlighter-language="css">
 ul {
   display:inline-block;
   width:150px;
@@ -34,58 +39,71 @@ ul {
 
 ul > li {
   color:red;
-}               </pre>
-            </div>
+}               </pre
+            >
+          </div>
         </section>
 
         <section id="opdracht2" class="opdracht_container">
-            <div class="opdracht_content">
-                <h1 class="vraag">Opdracht 2</h1>
-                <p style="margin-bottom: 20px;">Dit stukje code maakt gebruik van negatieve margins om de groep tekst te verschuiven naar boven om minder dead-space te gebruiken. Wanneer je de negatieve margins verandert naar een positieve variant zal er veel meer dead-space zichtbaar zijn op de pagina.</p>
-                <img src="img/zengarden.png" alt="Zen Garden" class="opdracht_image"><br>
-                <small><em>Voorbeeld zonder de negatieve margin-top</em></small>
-            </div>
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 2</h1>
+            <p style="margin-bottom: 20px">
+              Dit stukje code maakt gebruik van negatieve margins om de groep
+              tekst te verschuiven naar boven om minder dead-space te gebruiken.
+              Wanneer je de negatieve margins verandert naar een positieve
+              variant zal er veel meer dead-space zichtbaar zijn op de pagina.
+            </p>
+            <img
+              src="img/zengarden.png"
+              alt="Zen Garden"
+              class="opdracht_image"
+            /><br />
+            <small><em>Voorbeeld zonder de negatieve margin-top</em></small>
+          </div>
         </section>
 
         <section id="opdracht3" class="opdracht_container">
-            <div class="opdracht_content">
-                <h1 class="vraag">Opdracht 3</h1>
-                <a class="link" href="resume.html">Ga naar de resume opdracht</a>
-            </div>
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 3</h1>
+            <a class="link" href="resume.html">Ga naar de resume opdracht</a>
+          </div>
         </section>
         <section id="opdracht4" class="opdracht_container">
-            <div class="opdracht_content">
-                <h1 class="vraag">Opdracht 4</h1>
-                <a href="opdracht4.html" class="link">Ga naar de opdracht</a>
-            </div>
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 4</h1>
+            <a href="opdracht4.html" class="link">Ga naar de opdracht</a>
+          </div>
         </section>
         <section id="opdracht5" class="opdracht_container">
-            <div class="opdracht_content">
-                <h1 class="vraag">Opdracht 5</h1>
-                <a href="https://youtu.be/dQw4w9WgXcQ" class="link">Hyperlink</a>
-            </div>
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 5</h1>
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="link">Hyperlink</a>
+          </div>
         </section>
         <section id="opdracht6" class="opdracht_container">
-            <div class="opdracht_content">
-                <h1 class="vraag">Opdracht 6</h1>
-                <p>Schrijf een HTML pagina met bijbehorend CSS bestand om dit te realiseren d.m.v. een icoontje</p>
-                <ul class="checklist">
-                    <li class="checked">boter</li>
-                    <li>kaas</li>
-                    <li class="checked">eieren</li>
-                </ul>
-            </div>
+          <div class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 6</h1>
+            <p>
+              Schrijf een HTML pagina met bijbehorend CSS bestand om dit te
+              realiseren d.m.v. een icoontje
+            </p>
+            <ul class="checklist">
+              <li class="checked">boter</li>
+              <li>kaas</li>
+              <li class="checked">eieren</li>
+            </ul>
+          </div>
         </section>
-
+      </div>
     </main>
 
     <script src="js/enlighterjs.min.js" type="text/javascript"></script>
     <script type="text/javascript">
-        EnlighterJS.init('pre', 'code', {
-            language : 'css',
-            theme: 'atomic',
-            indent: 1
-        });
+      EnlighterJS.init("pre", "code", {
+        language: "css",
+        theme: "atomic",
+        indent: 1,
+      });
     </script>
-</body>
+  </body>
 </html>

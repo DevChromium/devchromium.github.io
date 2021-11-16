@@ -1,12 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+:root {
+    --dark-gray: #272b33;
+    --electric-blue: #90F1EF;
+    --mini-pink: #FFD6E0;
+    --yellow-crayola: #FFEF9F;
+    --mint-green: #C1FBA4;
+    --light-green: #7BF1A8;
+}
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: #F3F4F6;
+    background: var(--dark-gray);
+    color: white;
     font-family: 'Montserrat', sans-serif;
+}
+
+.intro_hero {
+    height: 25vh;
+    background-color: var(--electric-blue);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 5%;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .container {
@@ -14,24 +45,50 @@ body {
 }
 
 .opdracht_container {
-    border: solid 5px transparent;
+    position: relative;
+    border: solid 1px var(--electric-blue);
     border-radius: 10px;
-    background-image: linear-gradient(white, white), linear-gradient(315deg, #883ab4, #fd1d1d 50%, #fcb045);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    margin-bottom: 50px;
 }
 
 .opdracht_content {
     padding: 25px;
 }
 
-.opdracht_content > .vraag {
-    font-weight: bold;
-    margin-bottom: 5px;
+.opdracht_content > div {
+    margin-bottom: 20px;
 }
+
+.opdracht_title {
+    position:absolute;
+    top: -20px;
+    left: -15px;
+    background-color: var(--electric-blue);
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: black;
+}
+
+.vraag {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 
 .opdracht_image {
     border-radius: 10px;
     width: 45%;
+}
+
+.lab_link {
+    color: var(--electric-blue);
+    text-decoration: none;
+}
+
+.lab_link:visited,
+.lab_link:hover {
+    text-decoration: underline;
+    color: #67c8c7;
 }

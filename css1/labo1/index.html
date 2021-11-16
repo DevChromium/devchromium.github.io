@@ -1,143 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Labo 1 | CSS3</title>
-    <link rel="stylesheet" href="../css/globals.css">
-    <link rel="stylesheet" href="css/labo1.css">
-</head>
-<body>
-<main class="container">
-    <section id="opdracht1" style="margin-bottom: 50px;">
-        <h2 style="margin-bottom: 25px;">Opdracht 1</h2>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">1. Wat zijn de siblings van het <code>&lt;ul&gt;</code> element?</p>
-                <p class="antwoord">De elementen <code>&lt;p&gt;</code> en <code>&lt;h1&gt;</code></p>
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="css/labo1.css" />
+  </head>
+  <body>
+    <main>
+      <section class="intro_hero">
+        <h1 class="title">Week 6</h1>
+        <h2 class="subtitle">Labo 2</h2>
+      </section>
+      <div class="container">
+        <section id="opdracht1" class="opdracht_container">
+          <h2 class="opdracht_title">Opdracht 1</h2>
+          <article class="opdracht_content">
+            <div>
+              <p class="vraag">
+                1. Wat zijn de siblings van het <code>&lt;ul&gt;</code> element?
+              </p>
+              <p class="antwoord">
+                De elementen <code>&lt;p&gt;</code> en <code>&lt;h1&gt;</code>
+              </p>
             </div>
-        </div>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">2. Wat zijn de ancestors van het tweede <code>&lt;li&gt;</code> element?</p>
-                <p class="antwoord">De unordered list zelf: <code>&lt;ul&gt;</code></p>
+            <div>
+              <p class="vraag">
+                2. Wat zijn de ancestors van het tweede
+                <code>&lt;li&gt;</code> element?
+              </p>
+              <p class="antwoord">
+                De unordered list zelf: <code>&lt;ul&gt;</code>
+              </p>
             </div>
-        </div>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">3. Wat zijn de descendants van het <code>&lt;body&gt;</code> element</p>
-                <p class="antwoord"><code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code> en <code>&lt;ul&gt;</code></p>
+            <div>
+              <p class="vraag">
+                3. Wat zijn de descendants van het
+                <code>&lt;body&gt;</code> element
+              </p>
+              <p class="antwoord">
+                <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code> en
+                <code>&lt;ul&gt;</code>
+              </p>
             </div>
-        </div>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">4. Hoeveel elementen in een geldig HTML document hebben geen parent?</p>
-                <p class="antwoord">Twee elementen hebben geen parent in een geldig HTML document, dit zijn <code>&lt;head&gt;</code>
-                    en <code>&lt;body&gt;</code></p>
+            <div>
+              <p class="vraag">
+                4. Hoeveel elementen in een geldig HTML document hebben geen
+                parent?
+              </p>
+              <p class="antwoord">
+                Twee elementen hebben geen parent in een geldig HTML document,
+                dit zijn <code>&lt;head&gt;</code> en <code>&lt;body&gt;</code>
+              </p>
             </div>
-        </div>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">5. Heeft elk element één of meerdere child elementen?</p>
-                <p class="antwoord">Nee niet elk element heeft één of meerdere child elementen, de enigste met een child
-                    element is <code>&lt;ul&gt;</code></p>
-                <i style="font-size: 12px;">⚠️ Dit antwoord bevat niet de elementen zoals <code>&lt;head&gt;</code> en
-                    <code>&lt;body&gt;</code> omdat deze altijd een child element moeten hebben om iets te laten zien op
-                    de webpagina.</i>
+            <div>
+              <p class="vraag">
+                5. Heeft elk element één of meerdere child elementen?
+              </p>
+              <p class="antwoord">
+                Nee niet elk element heeft één of meerdere child elementen, de
+                enigste met een child element is <code>&lt;ul&gt;</code>
+              </p>
+              <i style="font-size: 12px"
+                >⚠️ Dit antwoord bevat niet de elementen zoals
+                <code>&lt;head&gt;</code> en <code>&lt;body&gt;</code> omdat
+                deze altijd een child element moeten hebben om iets te laten
+                zien op de webpagina.</i
+              >
             </div>
-        </div>
-    </section>
+          </article>
+        </section>
 
-    <section id="opdracht2" style="margin-bottom: 50px;">
-        <h2 style="margin-bottom: 25px;">Opdracht 2</h2>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">Open je persoonlijke pagina in Chrome, bekijk de visualisatie van de DOM‐tree op het
-                    Elements
-                    tabblad en vergelijk dit met de HTML code van je pagina.</p>
-                <p class="antwoord">Github pages voegt nog enkele bootstrap styles aan het document toe.</p>
-                <div id="opdr2_images"
-                     style="display: flex; flex-direction: row; justify-content: space-evenly; margin-top: 15px;">
-                    <img class="opdracht_image" src="images/domtree.png" alt="DOM Tree visualisatie in dev-tools">
-                    <img class="opdracht_image" src="images/htmlbroncode.png" alt="Mijn eigen html broncode">
-                </div>
+        <section id="opdracht2" class="opdracht_container">
+          <h2 class="opdracht_title">Opdracht 2</h2>
+          <article class="opdracht_content">
+            <p class="vraag">
+              Open je persoonlijke pagina in Chrome, bekijk de visualisatie van
+              de DOM‐tree op het Elements tabblad en vergelijk dit met de HTML
+              code van je pagina.
+            </p>
+            <p class="antwoord">
+              Github pages voegt nog enkele bootstrap styles aan het document
+              toe.
+            </p>
+            <div
+              id="opdr2_images"
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 15px;
+              "
+            >
+              <img
+                class="opdracht_image"
+                src="images/domtree.png"
+                alt="DOM Tree visualisatie in dev-tools"
+              />
+              <img
+                class="opdracht_image"
+                src="images/htmlbroncode.png"
+                alt="Mijn eigen html broncode"
+              />
             </div>
-        </div>
-    </section>
+          </article>
+        </section>
 
-    <section id="opdracht3" style="margin-bottom: 50px;">
-        <h2 style="margin-bottom: 25px;">Opdracht 3</h2>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">Noteer telkens op welke manier(en) de bijbehorende CSS‐regels geïntroduceerd worden</p>
-                <p class="antwoord">Alle websites hebben een aparte directory met hun <code>.css</code> files en die
-                    laden dit dan in door een <code>&lt;link&gt;</code> element te gebruiken.</p>
-                <div id="opdr3_images" style="display: flex; flex-direction: column; margin-top: 15px;">
-                    <img class="opdracht_image" style="margin-bottom: 5px;" src="images/miras.png" alt="Miras">
-                    <img class="opdracht_image" style="margin-bottom: 5px;" src="images/vives.png" alt="Vives">
-                    <img class="opdracht_image" style="margin-bottom: 5px;" src="images/vrt.png" alt="VRT">
-                </div>
+        <section id="opdracht3" class="opdracht_container">
+          <h2 class="opdracht_title">Opdracht 3</h2>
+          <article class="opdracht_content">
+            <p class="vraag">
+              Noteer telkens op welke manier(en) de bijbehorende CSS‐regels
+              geïntroduceerd worden
+            </p>
+            <p class="antwoord">
+              Alle websites hebben een aparte directory met hun
+              <code>.css</code> files en die laden dit dan in door een
+              <code>&lt;link&gt;</code> element te gebruiken.
+            </p>
+            <div
+              id="opdr3_images"
+              style="display: flex; flex-direction: column; margin-top: 15px"
+            >
+              <img
+                class="opdracht_image"
+                style="margin-bottom: 5px"
+                src="images/miras.png"
+                alt="Miras"
+              />
+              <img
+                class="opdracht_image"
+                style="margin-bottom: 5px"
+                src="images/vives.png"
+                alt="Vives"
+              />
+              <img
+                class="opdracht_image"
+                style="margin-bottom: 5px"
+                src="images/vrt.png"
+                alt="VRT"
+              />
             </div>
-        </div>
-    </section>
+          </article>
+        </section>
 
-    <section id="opdracht4" style="margin-bottom: 50px;">
-        <h2 style="margin-bottom: 25px;">Opdracht 4</h2>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <h1>Deze opdracht kan niet gemaakt worden</h1>
-            </div>
-        </div>
-    </section>
+        <section id="opdracht4" class="opdracht_container">
+          <h2 class="opdracht_title">Opdracht 4</h2>
+          <article class="opdracht_content">
+            <h1>Deze opdracht kan niet gemaakt worden</h1>
+          </article>
+        </section>
 
-    <section id="opdracht5" style="margin-bottom: 50px;">
-        <h2 style="margin-bottom: 25px;">Opdracht 5</h2>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">Pas de css code aan in de inspector</p>
-                <p class="antwoord">Je kan de code makkelijk aanpassen, maar vanaf wanneer je de website herlaadt zal de
-                    aanpassingen ongedaan gemaakt worden.</p>
-            </div>
-        </div>
-    </section>
+        <section id="opdracht5" class="opdracht_container">
+          <h2 class="opdracht_title">Opdracht 5</h2>
+          <article class="opdracht_content">
+            <p class="vraag">Pas de css code aan in de inspector</p>
+            <p class="antwoord">
+              Je kan de code makkelijk aanpassen, maar vanaf wanneer je de
+              website herlaadt zal de aanpassingen ongedaan gemaakt worden.
+            </p>
+          </article>
+        </section>
 
-    <section id="opdracht6" style="margin-bottom: 50px;">
-        <h2 style="margin-bottom: 25px;">Opdracht 6</h2>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">Maak onderstaande opmaak</p>
-                <div>
-                    <h1 class="h1">Never gonna.. (h1)</h1>
-                    <p class="p groen">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <h2 class="h2">Give you.. (h2)</h2>
-                    <p class="p blauw">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.</p>
-                    <h3 class="h3">Up.. (h3)</h3>
-                    <p class="p rood">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-                        adipisci velit.</p>
-                </div>
+        <section id="opdracht6" class="opdracht_container">
+          <h2 class="opdracht_title">Opdracht 6</h2>
+          <article class="opdracht_content">
+            <p class="vraag">Maak onderstaande opmaak</p>
+            <div>
+              <h1 class="h1">Never gonna.. (h1)</h1>
+              <p class="p groen">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <h2 class="h2">Give you.. (h2)</h2>
+              <p class="p blauw">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <h3 class="h3">Up.. (h3)</h3>
+              <p class="p rood">
+                Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit.
+              </p>
             </div>
-        </div>
-    </section>
+          </article>
+        </section>
 
-    <section id="opdracht7">
-        <h2 style="margin-bottom: 25px;">Opdracht 7</h2>
-        <div class="opdracht_container">
-            <div class="opdracht_content">
-                <p class="vraag">Welk wordt volgens de CSS standaard het grootst weergegeven en waarom?</p>
-                <p class="antwoord">
-                    <code>p > mm, cm > em > rem > ex > pt, pi</code>
-                    Aan deze vergelijking is te zien dat <code>ex</code> groter is dan <code>em</code>, dus zal de
-                    fontgrootte van h1 groter zijn dan die van h2. Op zijn beurt is h2 groter dan zijn element eronder
-                    namelijk h3. Dit zal terugkomen tot aan h6.
-                </p>
-            </div>
-        </div>
-    </section>
-</main>
-</body>
+        <section id="opdracht7" class="opdracht_container">
+          <h2 class="opdracht_title">Opdracht 7</h2>
+          <article class="opdracht_content">
+            <p class="vraag">
+              Welk wordt volgens de CSS standaard het grootst weergegeven en
+              waarom?
+            </p>
+            <p class="antwoord">
+              <code>p > mm, cm > em > rem > ex > pt, pi</code>
+              Aan deze vergelijking is te zien dat <code>ex</code> groter is dan
+              <code>em</code>, dus zal de fontgrootte van h1 groter zijn dan die
+              van h2. Op zijn beurt is h2 groter dan zijn element eronder
+              namelijk h3. Dit zal terugkomen tot aan h6.
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

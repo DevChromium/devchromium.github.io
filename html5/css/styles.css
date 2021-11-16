@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 :root {
-    --dark-gray: #1a1a1a;
+    --dark-gray: #272b33;
     --electric-blue: #90F1EF;
     --mini-pink: #FFD6E0;
     --yellow-crayola: #FFEF9F;
@@ -38,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     color: white;
-    background-color: #121212;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 25px;
     height: 75px;
     border-bottom: 2px solid var(--electric-blue);
@@ -87,7 +87,7 @@ section.container {
     margin-inline: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
-    background-color: #121212;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .button-group {
@@ -142,7 +142,7 @@ section.container {
 }
 
 .card {
-    background-color: #09090959;
+    background-color: rgba(0, 0, 0, 0.50);
     padding: 15px 20px;
     margin-bottom: 10px;
     border-radius: 5px;
