@@ -1,0 +1,11 @@
+.flex {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.col {
+    box-sizing: 50%;
+    border: 1px solid black;
+    padding-inline: 10px;
+}

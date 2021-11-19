@@ -73,13 +73,35 @@ body {
 
 .vraag {
     font-weight: bold;
+    color: var(--electric-blue);
     margin-bottom: 10px;
 }
 
+.antwoord {
+    padding-bottom: 20px;
+}
+
+.generic_code {
+    background: #7BF1A8;
+    color: #40a065;
+    padding: 2px;
+    border-radius: 5px;
+    margin-inline: 3px;
+    padding-inline: 5px;
+    font-family: monospace;
+}
+
+
+
+.image_container {
+    display: inline-flex;
+    column-gap: 10px;
+}
 
 .opdracht_image {
     border-radius: 10px;
-    width: 45%;
+    width: 33%;
+    height: auto;
 }
 
 .lab_link {

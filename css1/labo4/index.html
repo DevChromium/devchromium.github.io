@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Labo 4</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
+    <!-- Syntax highlighting-->
+    <link rel="stylesheet" href="../css/enlighterjs.atomic.min.css" />
+  </head>
+  <body>
+    <main>
+      <section class="intro_hero">
+          <h1 class="title">Week 8</h1>
+          <h2 class="subtitle">Labo 4</h2>
+      </section>
+
+      <div class="container">
+        <section id="opdracht1" class="opdracht_container">
+          <article class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 1</h1>
+            <h4 class="vraag">1. Voor welke waarden worden de opgegeven width en height genegeerd?</h4>
+            <p class="antwoord">Voor <span class="generic_code">inline</span></p>
+            <h4 class="vraag">2. Voor welke waarden worden de elementen als woorden op een pagina gezet?</h4>
+            <p class="antwoord">Voor <span class="generic_code">block</span></p>
+
+            <div class="image_container">
+              <img src="imgages/opdracht1block.png" alt="opdracht1 block" class="opdracht_image">
+              <img src="imgages/opdracht1inline.png" alt="opdracht1 block" class="opdracht_image">
+              <img src="imgages/opdracht1inline_block.png" alt="opdracht1 block" class="opdracht_image">
+            </div>
+          </article>
+        </section>
+
+        <section id="opdracht2" class="opdracht_container">
+          <article class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 2</h1>
+            <h4 class="vraag">Vanwaar komen de lege ruimtes tussen blokken die naast elkaar staan?</h4>
+            <p class="antwoord">De lege ruimtes komen van de default grid layout van de browser.</p>
+          </article>
+        </section>
+
+        <section id="opdracht3" class="opdracht_container">
+          <article class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 3</h1>
+
+            <h4 class="vraag">1. Waarom staat de tekst in de blokken horizontaal gecentreerd?</h4>
+            <p class="antwoord">Op elke div wordt er een <span class="generic_code">text-align: center;</span> toegevoegd.</p>
+
+            <h4 class="vraag">2. Ga na dat een property <span class="generic_code">vertical-align: center;</span> geen effect heeft. Waarom eigenlijk niet?</h4>
+            <p class="antwoord">"center" is geen mogelijke optie voor een vertical-align property.</p>
+
+            <h4 class="vraag">3. Ga na dat <span class="generic_code">vertical-align: middle;</span> er niet voor zorgt dat de tekst verticaal gecentreerd wordt. Wat doet dit dan wel?</h4>
+            <p class="antwoord"><span class="generic_code">vertical-align</span> zorgt er voor dat de tekst op de lijn zelf gepositioneerd wordt. Dit werkt niet op de parent element..</p>
+
+            <h4 class="vraag">4. Wat zijn de andere mogelijkheden om text te centreren?</h4>
+            <pre data-enlighter-language="css">
+.center {
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+}
+/* Eerder zou ik dit gebruiken */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+             </pre>
+
+             <h4 class="vraag">5. In 'styles.css' staan twee verschillende CSS regels die de height instellen van een element met
+              class="area tall". Waarom krijgt de regel voor class 'tall' voorrang?</h4>
+              <p class="antwoord">Omdat de height van de area class overschreden wordt met de height value van de tall class.</p>
+          </article>
+        </section>
+
+        <section id="opdracht4" class="opdracht_container">
+          <article class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 4</h1>
+            <h4 class="vraag">Voorbeeld 3</h4>
+            <a href="opdracht1/voorbeeld3.html" target="_blank" class="lab_link">Klik hier om naar het voorbeeld te gaan</a>
+
+            <h4 class="vraag">1. Ga na dat de floaty elementen naar links verplaats werden 'in hun regel'</h4>
+            <p class="antwoord">Ja, de floaty elementen zijn naar links verschoven in hun regel.</p>
+
+            <h4 class="vraag">2. Ga na dat er geen grote ruimte achterblijft tussen elementen 08 en 10 waar element 09 stond.</h4>
+            <p class="antwoord">Nee, er blijft geen ruimte over omdat de float regel het element verplaatst.</p>
+
+            <h4 class="vraag">3. Ga na dat 12 en 14 niet altijd netjes naast elkaar staan, het hang er maar vanaf of ze in dezelfde regel staan.</h4>
+            <p class="antwoord">Wanneer je je window resized kan het zijn dat de regel tekst boven het 14de element verschijnt waardoor ze niet netjes naast elkaar zullen staan.</p>
+
+            <h4 class="vraag">4. Ga na dat er geen kleine ruimte is tussen de groene floaty elementen en het rode element rechts ernaast, maar wel tussen de rode elementen onderling.</h4>
+            <p class="antwoord">De groene floaty elementen zullen geen gap tussen het rode element rechts ernaast laten.</p>
+
+            <h4 class="vraag">5. Geef element 17 de 'break' class en ga na dat dit helemaal geen invloed heeft qua positionering, er wordt niks 'gecleared'</h4>
+            <p class="antwoord">Zoals vermeld in de opdracht heeft het geen zin om elementen te clearen bij elementen met de <span class="generic_code">display: inline-block;</span> property</p>
+        </section>
+
+        <section id="opdracht5" class="opdracht_container">
+          <article class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht 5</h1>
+            <h4 class="vraag">Voorbeeld 4</h4>
+            <a href="opdracht1/voorbeeld4.html" target="_blank" class="lab_link">Klik hier om naar het voorbeeld te gaan</a>
+          </article>
+        </section>
+
+        <section id="opdrachtLorem" class="opdracht_container">
+          <article class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht Lorem Ipsum</h1>
+            <a href="lorem.html" target="_blank" class="lab_link">Klik hier om naar het voorbeeld te gaan</a>
+          </article>
+        </section>
+
+        <section id="opdrachtLorem" class="opdracht_container">
+          <article class="opdracht_content">
+            <h1 class="opdracht_title">Opdracht Cocktail bar</h1>
+            <a href="loungestart.html" target="_blank" class="lab_link">Klik hier om naar het voorbeeld te gaan</a>
+          </article>
+        </section>
+
+      </div>
+    </main>
+
+    <script src="../js/enlighterjs.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      EnlighterJS.init("pre", "code", {
+        language: "css",
+        theme: "atomic",
+        indent: 1,
+      });
+    </script>
+  </body>
+</html>
