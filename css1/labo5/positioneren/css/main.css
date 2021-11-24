@@ -1,0 +1,16 @@
+article {
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+article > p > img {
+    float: left;
+    margin-right: 10px;
+}
+
+article:nth-child(even) > p > img {
+    float: right;
+}
