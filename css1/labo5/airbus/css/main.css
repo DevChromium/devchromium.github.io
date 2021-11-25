@@ -1,6 +1,3 @@
-/* FIXME: Fix margins bij de bottom section en footer. */
-/* TODO: Maak de block classes en hun styling */
-
 /* Global Styles */
 body {
     width: 960px;
@@ -93,18 +90,30 @@ aside > article > p {
     width: 180px;
     height: 180px;
     border: 10px solid white;
+    outline: 1px dotted white;
 }
 
 .bottom {
     background-color: #666666;
     color: white;
     line-height: 2em;
+    display: flex;
 }
+
+.block {
+    margin-left: 120px;
+}
+
+.link:hover {
+    color: red;
+}  
 
 /* Footer styles */
 footer {
+    display: flex;
     background-color: black;
     color: white;
-    text-align: center;
-    height: 50px
+    height: 100px;
+    align-content: center;
+    justify-content: center;
 }
