@@ -61,6 +61,11 @@ aside > article > p {
 
 
 /* Main content styles */
+main {
+    background: white;
+}
+
+
 .content {
     width: 700px;
     background: white;
