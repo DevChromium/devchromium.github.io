@@ -38,7 +38,7 @@ p { color: #444444; }
 /* Main content styling */
 
 .content {
-    box-sizing: 70%;
+    width: 70%;
 }
 
 #guarantee {
