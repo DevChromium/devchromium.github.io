@@ -61,10 +61,16 @@ aside > article > p {
 
 
 /* Main content styles */
+main {
+    background: white;
+}
+
+
 .content {
     width: 700px;
     background: white;
     text-align: justify;
+    font-size: 90%;
     margin: 0;
 }
 
