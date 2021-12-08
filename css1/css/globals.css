@@ -74,10 +74,12 @@ body {
 .vraag {
     font-weight: bold;
     color: var(--electric-blue);
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
 .antwoord {
+    font-weight: 100;
     padding-bottom: 20px;
 }
 
