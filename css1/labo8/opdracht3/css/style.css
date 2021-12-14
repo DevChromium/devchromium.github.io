@@ -1,0 +1,224 @@
+/* Variables */
+:root {
+    --clr-gray: #ebe8e8;
+    --clr-dark-gray: #5b4746;
+    --clr-yellow: #fff100; 
+    --clr-red: #ff4d56;
+    --clr-shadow: #8D99AE;
+}
+
+
+/* Gekregen CSS */
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Global Styles */
+
+* {
+  margin: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Element styles */
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #000;
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 150%;
+    margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+    height: auto;
+    border-bottom: 1px solid var(--clr-gray);
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+header > img {
+    height: 50px !important;
+    width: auto !important;
+}
+
+/* Navigation bar */
+nav {
+    margin-inline: auto;
+}
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 13px;
+}
+
+.navbar > li:last-child {
+    border-right: hidden;
+}
+
+.navbar > li > a {
+    text-transform: uppercase;
+    color: var(--clr-dark-gray);
+    text-decoration: none;
+}
+
+.navbar > li > a:hover {
+    border-bottom: 2px solid var(--clr-yellow);
+}
+
+
+/* Main Content */
+main {
+    border-top: 1px solid var(--clr-gray);
+}
+main > .hero {
+    background-image: url('../images/headerimage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: var(--clr-shadow) 2px 2px;
+}
+
+main > .recipes {
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+main > .recommended {
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+main > .recommended > .row > div {
+    margin-bottom: 25px;
+}
+
+/* Articles */
+article {
+    margin-right: 1.5rem;
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.article_title {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: var(--clr-red);
+    padding-bottom: 1rem;
+}
+
+.article_description {
+    color: #666;
+    line-height: 2;
+    padding-bottom: 1rem;
+}
+
+.article_footer {
+    display: inline-flex;
+    padding-bottom: 1rem;
+}
+
+.article_author {
+    padding-right: 10px;
+    border-right: 1px solid var(--clr-gray)
+}
+
+.article_date {
+    color: #666;
+    padding-left: 10px;
+}
+
+/* Footer */
+footer {
+    display: inline;
+    width: 1vmax;
+    line-height: 2em;
+}
+
+#left {
+    float: left;
+    background-color: white;
+    text-align: end;
+    width: 50%;
+    padding: 20px;
+}
+#right {
+    float: right;
+    background-color: black;
+    color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+/* Media Queries */
+
+/* Small screens */
+@media only screen and (max-width: 770px) {
+    header,
+    nav,
+    main > .recipes,
+    main > .recommended {
+        width: 600px;
+    }
+}
+
+/* Medium screens */
+@media only screen and (max-width: 1000px) {
+    header,
+    nav,
+    main > .recipes,
+    main > .recommended {
+        width: 750px;
+        margin-inline: auto;
+    }
+}
+
+/* Larger than 800px */
+@media only screen and (min-width: 800px) {
+    main > .hero {
+        font-size: 5em;
+    }
+}
+
+
+/* Large screens */
+@media only screen and (min-width: 1000px) {
+    header,
+    nav,
+    main > .recipes,
+    main > .recommended {
+        width: 980px;
+        margin-inline: auto;
+    }
+
+    .navbar > li {
+        border-right: 1px solid var(--clr-gray);
+    }
+}
