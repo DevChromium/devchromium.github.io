@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(0deg, #dcd2c5, black);
+    background-repeat: no-repeat;
+    width: 970px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/headerokapi.jpg');
+    padding: 10px;
+    border: 1px solid black;
+}
+
+main {
+    background-color: #ECEADF;
+    border: 1px solid black;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 10px;
+}
+
+.title {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+article {
+    padding-bottom: 10px;
+}
+
+.article_content {
+    padding: 5px;
+}
+
+.auteur {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    height: 100%;
+    float: left;
+}
+
+
+.left {
+    width: 65%;
+    padding-right: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 35%;
+}
+
+.right > img {
+    border: 1px solid black;
+}
+
+.quote {
+    border: 1px solid black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+footer {
+    border-top: 5px solid black;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    text-align: right;
+}
