@@ -3,7 +3,7 @@
     --clr-gray: #ebe8e8;
     --clr-dark-gray: #5b4746;
     --clr-yellow: #fff100; 
-    --clr-red: #ff4d56;
+    --clr-red: #c29d9e;
     --clr-shadow: #8D99AE;
 }
 
@@ -45,9 +45,6 @@ h2 {
 header {
     height: auto;
     border-bottom: 1px solid var(--clr-gray);
-    display: flex;
-    justify-content: center;
-    margin-inline: auto;
 }
 
 header > img {
