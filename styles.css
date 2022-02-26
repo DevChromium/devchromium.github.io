@@ -2,7 +2,7 @@
 :root {
     --dark-gray: #272b33;
     --electric-blue: #90F1EF;
-    --mini-pink: #FFD6E0;
+    --mini-pink: rgb(244, 114, 182);
     --yellow-crayola: #FFEF9F;
     --mint-green: #C1FBA4;
     --light-green: #7BF1A8;
@@ -16,33 +16,35 @@ body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: var(--dark-gray);
-    color: white;
-    
+
 }
 
 .hero {
-    background: linear-gradient(315deg, var(--electric-blue), var(--light-green) 50%, var(--yellow-crayola));
+    background: linear-gradient(to right bottom, rgb(254, 240, 138), rgb(251, 207, 232), rgb(244, 114, 182));
     height: 55vh;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-inline: 5%;
+    padding-inline: 10rem;
     margin-bottom: 50px;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    padding-inline: 5%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .inline-container {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.hero > .title {
+    font-weight: bold;
+    font-size: 3rem;
 }
 
 .title {
@@ -50,22 +52,14 @@ body {
     margin-bottom: 10px;
 }
 
-.list {
-    margin-inline: 1%;
-}
 .list > li > a {
-    color: white;
     text-decoration: none;
 }
 .list > li > a:hover {
-    color: var(--electric-blue);
-}
-
-#opdrachten_html,
-#opdrachten_css {
-    margin-bottom: 15px;
+    color: var(--mini-pink);
 }
 
 .fab {
-    color: var(--electric-blue);
+    color: var(--mini-pink);
 }
+
