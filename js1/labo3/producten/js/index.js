@@ -20,14 +20,14 @@ const herberekenTotaal = () => {
     let aantalProduct3 = document.getElementById("product3").value;
 
     let subtotaalProduct1 = (aantalProduct1 * priceProduct1) * 1.06;
-    let subtotaalProduct2 = (aantalProduct2 * priceProduct1) * 1.06;
-    let subtotaalProduct3 = (aantalProduct3 * priceProduct1) * 1.06;
+    let subtotaalProduct2 = (aantalProduct2 * priceProduct2) * 1.21;
+    let subtotaalProduct3 = (aantalProduct3 * priceProduct3) * 1.21;
 
     subtotalen[0].textContent = `${subtotaalProduct1.toFixed(2).toString()} Eur`;
     subtotalen[1].textContent = `${subtotaalProduct2.toFixed(2).toString()} Eur`;
     subtotalen[2].textContent = `${subtotaalProduct3.toFixed(2).toString()} Eur`;
 
-    totaal.textContent = (subtotaalProduct1 + subtotaalProduct2 + subtotaalProduct3).toFixed(2).toString() + ' Eur';
+    totaal.textContent = (subtotaalProduct1 + subtotaalProduct2 + subtotaalProduct3).toFixed(2).toString();
 
 }
 

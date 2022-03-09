@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-spacing: 0;
+}
+
+th,
+td{
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) > td {
+    background: #EFEFEF
+}
+
+tr:last-child > td {
+    border: none
+}
+
+tbody > tr > td:nth-child(2)::after {
+    content: ' Eur'
+}
+
+#herbereken {
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    background-color: #0070A8;
+    color: white;
+}
+
+#herbereken:hover {
+    background-color: #004f75;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
