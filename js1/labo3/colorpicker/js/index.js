@@ -12,17 +12,32 @@ const setup = () => {
 const changeColor = () => {
 
     let sliders = document.getElementsByClassName("slider");
+
     let redLabel = document.getElementById("redLabel");
     let blueLabel = document.getElementById("blueLabel");
     let greenLabel = document.getElementById("greenLabel");
+
     let colorDiv = document.getElementById("color");
+    let hexTxt = document.getElementById("hexColor");
 
-    redLabel.textContent = `Red: ${sliders[0].value}`;
-    blueLabel.textContent = `Blue: ${sliders[1].value}`;
-    greenLabel.textContent = `Green: ${sliders[2].value}`;
+    let red = sliders[0].value;
+    let green = sliders[1].value;
+    let blue = sliders[2].value;
 
-    colorDiv.style.backgroundColor = `rgb(${sliders[0].value}, ${sliders[1].value},${sliders[2].value})`
+    redLabel.textContent = `Red: ${red}`;
+    greenLabel.textContent = `Green: ${green}`;
+    blueLabel.textContent = `Blue: ${blue}`;
+
+    colorDiv.style.backgroundColor = `rgb(${red}, ${blue},${green})`
+
+    let hex = [red, green, blue].map(x => {
+        x = parseInt(x).toString(16);
+        return x.length === 1 ? `0${x}` : x;
+    });
+
+    hexTxt.innerText = `#${hex.join("").toUpperCase()}`
 
 }
+
 
 window.addEventListener("load", setup)
