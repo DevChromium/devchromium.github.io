@@ -8,24 +8,20 @@ const herberekenTotaal = () => {
 
     let subtotalen = document.getElementsByClassName("subtotaal");
     let totaal = document.getElementById("totaal");
-
-    // prijzen
-    let priceProduct1 = parseFloat(document.getElementById("priceProduct1").textContent);
-    let priceProduct2 = parseFloat(document.getElementById("priceProduct2").textContent);
-    let priceProduct3 = parseFloat(document.getElementById("priceProduct3").textContent);
+    let prices = document.getElementsByClassName("price");
 
     // aantallen
     let aantalProduct1 = document.getElementById("product1").value;
     let aantalProduct2 = document.getElementById("product2").value;
     let aantalProduct3 = document.getElementById("product3").value;
 
-    let subtotaalProduct1 = (aantalProduct1 * priceProduct1) * 1.06;
-    let subtotaalProduct2 = (aantalProduct2 * priceProduct2) * 1.21;
-    let subtotaalProduct3 = (aantalProduct3 * priceProduct3) * 1.21;
+    let subtotaalProduct1 = (aantalProduct1 * parseFloat(prices[0].textContent)) * 1.06;
+    let subtotaalProduct2 = (aantalProduct2 * parseFloat(prices[1].textContent)) * 1.21;
+    let subtotaalProduct3 = (aantalProduct3 * parseFloat(prices[2].textContent)) * 1.21;
 
-    subtotalen[0].textContent = `${subtotaalProduct1.toFixed(2).toString()} Eur`;
-    subtotalen[1].textContent = `${subtotaalProduct2.toFixed(2).toString()} Eur`;
-    subtotalen[2].textContent = `${subtotaalProduct3.toFixed(2).toString()} Eur`;
+    subtotalen[0].textContent = `${subtotaalProduct1.toFixed(2).toString()}`;
+    subtotalen[1].textContent = `${subtotaalProduct2.toFixed(2).toString()}`;
+    subtotalen[2].textContent = `${subtotaalProduct3.toFixed(2).toString()}`;
 
     totaal.textContent = (subtotaalProduct1 + subtotaalProduct2 + subtotaalProduct3).toFixed(2).toString();
 

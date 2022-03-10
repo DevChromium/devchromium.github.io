@@ -19,19 +19,40 @@ body {
 }
 
 table {
+    border-collapse: collapse;
     border-spacing: 0;
-}
-
-tr {
-    margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: white;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
 }
 
-td {
-    padding-top: 0.725rem;
-    padding-bottom: 0.725rem;
-    padding-inline: 1.125rem;
+th,td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background: #1a53ff;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #99b3ff;
+}
+
+tbody tr:nth-child(even) {
+    background: hsl(225, 100%, 90%)
+}
+
+tbody th {
+    background:hsl(225, 100%, 70%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2%;
 }
 
 
@@ -39,12 +60,24 @@ td {
     border: none;
     border-radius: 5px;
     padding: 0.75rem 1rem;
-    background-color: #0070A8;
+    background-color: #4373ff;
     color: white;
 }
 
 #herbereken:hover {
-    background-color: #004f75;
+    background-color: #0037db;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
+}
+
+input[type="number"] {
+    border: none;
+    border-radius: 5px;
+    padding: 0.725rem 1rem;
+}
+
+.price::before,
+#totaal::before,
+.subtotaal::before {
+    content: '€ ';
 }
