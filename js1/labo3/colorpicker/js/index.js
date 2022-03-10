@@ -28,16 +28,18 @@ const changeColor = () => {
     greenLabel.textContent = `Green: ${green}`;
     blueLabel.textContent = `Blue: ${blue}`;
 
-    colorDiv.style.backgroundColor = `rgb(${red}, ${blue},${green})`
+    let hex = `#${decToHex(red)}${decToHex(green)}${decToHex(blue)}`
 
-    let hex = [red, green, blue].map(x => {
-        x = parseInt(x).toString(16);
-        return x.length === 1 ? `0${x}` : x;
-    });
+    colorDiv.style.backgroundColor = hex
+    hexTxt.innerText = hex
+}
 
-    hexTxt.innerText = `#${hex.join("").toUpperCase()}`
-
+const decToHex = decimal => {
+    decimal = parseInt(decimal).toString(16)
+    return decimal.length === 1 ? "0" + decimal : decimal;
 }
 
 
-window.addEventListener("load", setup)
+
+
+window.addEventListener("load", setup);
