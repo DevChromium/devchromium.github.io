@@ -8,10 +8,10 @@ const formSubmit = (event) => {
     event.preventDefault();
 
     let woord = document.getElementById('woord').value;
-    console.log(maakInSpaties(woord));
+    console.log(maakMetSpaties(woord));
 }
 
-const maakInSpaties = (inputText) => {
+const maakMetSpaties = (inputText) => {
     let result = ""
     for (let i = 0; i < inputText.length; i++) {
         const letter = inputText.charAt(i);

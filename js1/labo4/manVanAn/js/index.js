@@ -1,8 +1,10 @@
 const setup = () => {
 
     const text = "De man van An geeft geen hand aan ambetante verwanten";
+    let occurences = text.match(/an/g);
     
-    console.log(text.toLowerCase().indexOf("an"))
+    console.log(occurences.length)
+    
 
 }
 
