@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formwaarden</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form action="#">
+                <label for="isRoker">Is roker</label>
+                <input type="checkbox" name="isRoker" id="isRoker"/>
+                <br>
+                <p>Moedertaal</p>
+                <input type="radio" value="nl" placeholder="Nederlands" name="moedertaal" id="nederlands" />
+                <label for="nederlands">Nederlands</label>
+
+                <input type="radio" value="fr" placeholder="Frans" name="moedertaal" id="frans" />
+                <label for="frans">Frans</label>
+
+                <input type="radio" value="en" placeholder="Engels" name="moedertaal" id="engels"/>
+                <label for="Engels">Engels</label>
+                <br>
+                <label for="favorieteBuurland">Favoriete buurland</label>
+                <select name="favorieteBuurland" id="favorieteBuurland">
+                    <option value="frankrijk">Frankrijk</option>
+                    <option value="nederlands">Nederlands</option>
+                    <option value="duitsland">Duitsland</option>
+                </select>
+                <br>
+
+                <label for="bestelling">Bestelling</label>
+                <select name="bestelling" id="bestelling" multiple>
+                    <option value="aardappelen">aardappelen</option>
+                    <option value="brood">brood</option>
+                    <option value="melk">melk</option>
+                    <option value="biefstuk">biefstuk</option>
+                    <option value="chips">chips</option>
+                    <option value="krant">krant</option>
+                </select>
+                <br>
+
+                <input type="submit" placeholder="Toon resultaat" id="submit">
+                
+            </form>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
