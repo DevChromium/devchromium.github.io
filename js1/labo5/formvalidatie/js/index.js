@@ -22,8 +22,7 @@ const validate = (event) => {
     familienaam.value.length > 50 || familienaam.value.length === 0 ? familienaam.style = errorStyle : familienaam.style = "";
     geboortedatum.value.length === 0 ? geboortedatum.style = errorStyle : familienaam.style = "";
     email.value.match(emailPattern) ? familienaam.style = "" : email.style = errorStyle;
-    aantalKinderen.value < 0 || aantalKinderen.value > 99 ? aantalKinderen.style = errorStyle : aantalKinderen.style = "";
-
+    typeof aantalKinderen !== Number || parseInt(aantalKinderen.value) < 0 || parseInt(aantalKinderen.value) > 99 ? aantalKinderen.style = errorStyle : aantalKinderen.style = "";
 
 }
 
