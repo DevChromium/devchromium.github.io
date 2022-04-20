@@ -12,9 +12,6 @@ const setup = () => {
     image.setAttribute('src', 'https://nypost.com/wp-content/uploads/sites/2/2016/09/astley1a.jpg?quality=90&strip=all&w=664')
 
     body.appendChild(image)
-
-    
-
 }
 
 window.addEventListener("load", setup)
