@@ -25,6 +25,7 @@ const generateCards = () => {
     // Put pairs of each card in the field
     for (let i = 0; i < AANTAL_KAARTEN; i++) {
         let card1 = document.createElement("img");
+
         card1.src = cards.get(cardsArray[i]);
         card1.className = "card";
         card1.setAttribute("data-pokemon", cardsArray[i]);
@@ -45,7 +46,6 @@ const hideCards = () => {
     for (let i = 0; i < cards.length; i++) {
         cards[i].setAttribute("src", "images/achterkant.jpeg");
     }
-
 }
 
 const flipCard = (event) => {
@@ -53,10 +53,10 @@ const flipCard = (event) => {
     let card = event.target;
     card.setAttribute("src", cards.get(card.getAttribute("data-pokemon")));
     card.removeEventListener("click", flipCard);
-    checkMatch(card);
+    checkIfCardMatches(card);
 }
 
-const checkMatch = (card) => {
+const checkIfCardMatches = (card) => {
     // Check if the card is a match to a different flipped card
     let cards = document.getElementsByClassName("card");
     let flippedCards = [];
