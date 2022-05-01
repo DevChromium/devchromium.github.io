@@ -75,7 +75,7 @@ const checkIfCardMatches = (card) => {
             changeScore()
             resetCards()
         } else {
-            setTimeout(resetCards, 1000);
+            setTimeout(resetCards, 5000);
         }
     }
 }
@@ -105,6 +105,5 @@ const changeScore = () => {
     scoreElement.firstChild.remove()
     scoreElement.appendChild(scoreText);
 }
-
 
 window.addEventListener('load', setup);
