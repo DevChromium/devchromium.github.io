@@ -88,26 +88,26 @@ const parseQuery = () => {
 
     switch(command) {
         case '/y':
-            url = `https://www.youtube.com/results?search_query=${searchQuery}`;
+            url = `https://www.youtube.com/results?search_query=${searchQuery.join('+')}`;
             historyObj.title = 'Youtube';
             historyObj.text = searchQuery.join(' ');
             historyObj.url = url;
 
             break;
         case '/g':
-            url = `https://www.google.com/search?q=${searchQuery}`;
+            url = `https://www.google.com/search?q=${searchQuery.join('+')}`;
             historyObj.title = 'Google';
             historyObj.text = searchQuery.join(' ');
             historyObj.url = url;
             break;
         case '/t':
-            url = `https://twitter.com/hashtag/${searchQuery}`;
+            url = `https://twitter.com/hashtag/${searchQuery.join('%20')}`;
             historyObj.title = 'Twitter';
             historyObj.text = searchQuery.join(' ');
             historyObj.url = url;
             break;
         case '/i':
-            url = `https://www.instagram.com/explore/tags/${searchQuery}`;
+            url = `https://www.instagram.com/explore/tags/${searchQuery.join('%20')}`;
             historyObj.title = 'Instagram';
             historyObj.text = searchQuery;
             historyObj.url = url;
