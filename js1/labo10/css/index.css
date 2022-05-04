@@ -1,0 +1,29 @@
+:root {
+    --gradient-youtube: linear-gradient(to right bottom, rgb(239, 68, 68), rgb(153, 27, 27));
+    --gradient-google: linear-gradient(to right bottom, rgb(56, 189, 248), rgb(59, 130, 246));
+    --gradient-twitter: linear-gradient(to right bottom, rgb(56, 189, 248), rgb(103, 232, 249));
+    --gradient-instagram: linear-gradient(to right bottom, rgb(217, 70, 239), rgb(220, 38, 38), rgb(251, 146, 60));
+}
+
+
+
+#history__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.youtube {
+    background: var(--gradient-youtube) !important;
+}
+
+.google {
+    background: var(--gradient-google) !important;
+}
+
+.twitter {
+    background: var(--gradient-twitter) !important;
+}
+
+.instagram {
+    background: var(--gradient-instagram) !important;
+}
