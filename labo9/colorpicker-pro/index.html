@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colorpicker</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<main>
+    <section class="center">
+        <div class="colorPickerContainer">
+            <div class="colorPicker">
+                <div class="colorPicker--options">
+                    0 <input type="range" class="slider" value="0" min="0" max="255" id="red"/> 255 <label for="red"
+                                                                                                           id="redLabel">Red:
+                    0</label>
+                    <br>
+                    0 <input type="range" class="slider" value="0" min="0" max="255" id="green"/> 255 <label for="green"
+                                                                                                             id="greenLabel">Green:
+                    0</label>
+                    <br>
+                    0 <input type="range" class="slider" value="0" min="0" max="255" id="blue"/> 255 <label for="blue"
+                                                                                                            id="blueLabel">Blue:
+                    0</label>
+                </div>
+
+                <div id="color"></div>
+            </div>
+            <div style="padding-bottom: 10px;">
+                <span>
+                    <strong><small><em>HEX Code: </em></small></strong>
+                    <small><em id="hexColor">#000000</em></small>
+                </span>
+                <button type="submit" id="save">Save</button>
+            </div>
+            <section>
+                <h1>Saved colors</h1>
+                <br>
+                <div id="savedSwatches"></div>
+            </section>
+        </div>
+    </section>
+</main>
+<script src="./js/index.js"></script>
+</body>
+</html>
